@@ -1,0 +1,101 @@
+ /* Общие настройки */
+ body {
+    background-color: #f0f4f8; /* Светлый, чуть теплый фон */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+/* Контейнер личного кабинета */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+h1 {
+    font-size: 38px;
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Карточка с информацией о пользователе */
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p strong {
+    color: #4a90e2;
+}
+
+.user-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin: 0 auto 20px auto;  /* Центрирование */
+    overflow: hidden; /* Чтобы видео не выходило за пределы круга */
+}
+
+.user-photo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* Кнопка выхода */
+.logout-btn {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #e0434b;
+    transform: translateY(-3px); /* Небольшая анимация при наведении */
+}
+
+/* Информация об ошибках - скрыта по умолчанию */
+.error-message {
+    display: none;
+    background-color: #ffdddd;
+    color: #e74c3c;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,25 @@
+/* Анимация появления и исчезновения */
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Применяем анимацию к уведомлению */
+  .fade-in-out {
+    animation: fadeInOut 3s ease-in-out; /* Длительность 3 секунды */
+  }
+  
